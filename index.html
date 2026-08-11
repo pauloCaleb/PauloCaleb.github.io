@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paulo Caleb — Embedded Systems &amp; Hardware Portfolio</title>
+<meta name="description" content="Portfolio of Paulo Caleb — embedded systems, firmware and PCB design projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background trace layer -->
+<svg class="board-traces" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M -50 120 H 300 L 340 160 V 300 L 400 360 H 900 L 950 410 V 700" />
+  <path d="M 1250 60 H 850 L 800 110 V 260 L 740 320 H 200" />
+  <path d="M -50 620 H 250 L 300 670 H 700 L 760 610 V 200" />
+  <circle cx="300" cy="120" r="5"></circle>
+  <circle cx="400" cy="360" r="5"></circle>
+  <circle cx="950" cy="410" r="5"></circle>
+  <circle cx="800" cy="110" r="5"></circle>
+  <circle cx="740" cy="320" r="5"></circle>
+  <circle cx="300" cy="670" r="5"></circle>
+  <circle cx="760" cy="610" r="5"></circle>
+</svg>
+
+<header class="topbar">
+  <a href="#top" class="logo">PC<span>·</span></a>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="refdes">U1</p>
+    <h1>Paulo Caleb</h1>
+    <p class="role">Embedded Systems &amp; Hardware Engineer</p>
+    <p class="tagline">I design the boards, firmware, and control logic that sit between sensors and decisions — from precision‑agriculture telemetry to conveyor sorting lines.</p>
+    <div class="hero-meta">
+      <span>Electronics Engineering — UnB</span>
+      <span class="dot">•</span>
+      <span>PCB design · Embedded firmware · Precision agtech</span>
+    </div>
+  </section>
+
+  <!-- GENERAL CADs -->
+  <section class="category" id="projects">
+    <div class="category-head">
+      <p class="comment">// MECHANICAL CADs</p>
+      <div class="trace-line"></div>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <p class="refdes">U02</p>
+        <figure class="footprint" data-file="assets/cad-3d-printed-motor-01.jpg">
+          <img src="assets/cad-3d-printed-motor-01.jpg" alt="3D printed electric motor, handheld" loading="lazy">
+        </figure>
+        <h3>3D‑Printed Electric Motors</h3>
+        <p>Fully 3D‑printed DC motor bodies designed from scratch in CAD, wound and assembled by hand to validate the mechanical design before moving to production parts.</p>
+      </article>
+
+      <article class="card">
+        <p class="refdes">U03</p>
+        <figure class="footprint" data-file="assets/cad-didactic-bench.jpg">
+          <img src="assets/cad-didactic-bench.jpg" alt="Didactic bench for small DC motors" loading="lazy">
+        </figure>
+        <h3>Didactic Bench for Small DC Motors</h3>
+        <p>A compact 3D‑printed test bench with driver electronics and a potentiometer, built to demonstrate small DC‑motor control on breadboard prototypes.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PCB PROJECTS -->
+  <section class="category">
+    <div class="category-head">
+      <p class="comment">// PCB PROJECTS</p>
+      <div class="trace-line"></div>
+    </div>
+
+    <div class="grid">
+      <article class="card wide">
+        <p class="refdes">U04</p>
+        <figure class="footprint" data-file="assets/pcb-weather-station-board.jpg">
+          <img src="assets/pcb-weather-station-board.jpg" alt="UnB ARC weather station PCB, populated board" loading="lazy">
+        </figure>
+        <h3>Weather Station — UnB ARC</h3>
+        <p>Custom weather‑station PCB for the UnB ARC team: schematic, layout and bring‑up of a board that reads environmental sensors and reports over a serial link.</p>
+        <div class="subgrid">
+          <figure class="footprint small" data-file="assets/pcb-weather-station-schematic.jpg">
+            <img src="assets/pcb-weather-station-schematic.jpg" alt="Weather station schematic" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/pcb-weather-station-layout.jpg">
+            <img src="assets/pcb-weather-station-layout.jpg" alt="Weather station PCB layout, top and bottom copper" loading="lazy">
+          </figure>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <p class="refdes">U05</p>
+        <figure class="footprint" data-file="assets/pcb-ealive-dongle-01.jpg">
+          <img src="assets/pcb-ealive-dongle-01.jpg" alt="eAlive OBD-II telemetry dongle, top board with LEDs" loading="lazy">
+        </figure>
+        <h3>eAlive — OBD‑II Telemetry Dongle</h3>
+        <p>A vehicle telemetry dongle that plugs into the OBD‑II port to read CAN data and stream it over BLE/Wi‑Fi/LTE. Includes schematic, multi‑board layout and panelized production files.</p>
+        <div class="subgrid">
+          <figure class="footprint small" data-file="assets/pcb-ealive-dongle-02.jpg">
+            <img src="assets/pcb-ealive-dongle-02.jpg" alt="eAlive dongle, bottom board" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/pcb-ealive-connector.jpg">
+            <img src="assets/pcb-ealive-connector.jpg" alt="eAlive OBD-II connector board with module" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/pcb-ealive-schematic.jpg">
+            <img src="assets/pcb-ealive-schematic.jpg" alt="eAlive system overview schematic" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/pcb-ealive-panel.jpg">
+            <img src="assets/pcb-ealive-panel.jpg" alt="eAlive PCB production panel, four boards" loading="lazy">
+          </figure>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <p class="refdes">U06</p>
+        <figure class="footprint" data-file="assets/pcb-server-ctrl-board.jpg">
+          <img src="assets/pcb-server-ctrl-board.jpg" alt="ESP32 server power controller PCB, handheld" loading="lazy">
+        </figure>
+        <h3>IoT Server Power Controller</h3>
+        <p>ESP32‑based PCB that remotely powers a server on and off, paired with a small web dashboard (ServerCtrl) to trigger power, reset and read live status.</p>
+        <div class="subgrid">
+          <figure class="footprint small" data-file="assets/pcb-server-ctrl-3d.jpg">
+            <img src="assets/pcb-server-ctrl-3d.jpg" alt="Server power controller PCB, 3D render" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/pcb-server-ctrl-layout.jpg">
+            <img src="assets/pcb-server-ctrl-layout.jpg" alt="Server power controller PCB copper layout" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/pcb-server-ctrl-ui.jpg">
+            <img src="assets/pcb-server-ctrl-ui.jpg" alt="ServerCtrl web dashboard, power on and off" loading="lazy">
+          </figure>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- OTHER PROJECTS -->
+  <section class="category">
+    <div class="category-head">
+      <p class="comment">// OTHER PROJECTS</p>
+      <div class="trace-line"></div>
+    </div>
+
+    <div class="grid">
+      <article class="card wide">
+        <p class="refdes">U07</p>
+        <figure class="footprint" data-file="assets/other-aquarium-unit.jpg">
+          <img src="assets/other-aquarium-unit.jpg" alt="Aquarium control unit mounted on a fish tank" loading="lazy">
+        </figure>
+        <h3>Aquarium Control Unit</h3>
+        <p>A mechanical + electronic control system for an aquarium, including a custom auger‑screw fluid mixer and driver electronics for automated dosing.</p>
+        <div class="subgrid">
+          <figure class="footprint small" data-file="assets/other-fluid-mixer.jpg">
+            <img src="assets/other-fluid-mixer.jpg" alt="3D printed auger screw fluid mixer" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/other-aquarium-electronics.jpg">
+            <img src="assets/other-aquarium-electronics.jpg" alt="Aquarium control unit electronics and hopper" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/other-aquarium-schematic.jpg">
+            <img src="assets/other-aquarium-schematic.jpg" alt="Aquarium control unit schematic" loading="lazy">
+          </figure>
+        </div>
+      </article>
+
+      <article class="card">
+        <p class="refdes">U08</p>
+        <figure class="footprint" data-file="assets/other-fgr-ecu-01.jpg">
+          <img src="assets/other-fgr-ecu-01.jpg" alt="Electronic control units for FSAE 2022 competition" loading="lazy">
+        </figure>
+        <h3>Electronic Control Units — FGR</h3>
+        <p>A set of ECUs enforcing all FSAE 2022 competition electrical rules, built and bench‑tested as a full board of interconnected modules.</p>
+      </article>
+
+      <article class="card wide">
+        <p class="refdes">U09</p>
+        <figure class="footprint" data-file="assets/other-conveyor-belt.jpg">
+          <img src="assets/other-conveyor-belt.jpg" alt="Embedded conveyor belt sorting system, mechanical build" loading="lazy">
+        </figure>
+        <h3>Embedded Conveyor Belt Sorting System</h3>
+        <p>Raspberry Pi 3B + STM32G070 sorting line: mainboard schematic, finite‑state‑machine firmware and a graphical control interface (still in progress).</p>
+        <div class="subgrid">
+          <figure class="footprint small" data-file="assets/other-conveyor-board.jpg">
+            <img src="assets/other-conveyor-board.jpg" alt="Conveyor sorting system electronics board" loading="lazy">
+          </figure>
+          <figure class="footprint small" data-file="assets/other-conveyor-gui.jpg">
+            <img src="assets/other-conveyor-gui.jpg" alt="Conveyor sorting system graphical user interface" loading="lazy">
+          </figure>
+        </div>
+        <a class="repo-link" href="https://github.com/pauloCaleb/Trabalho_Final_SOE_2026.1_Esteira" target="_blank" rel="noopener">
+          View source — github.com/pauloCaleb/Trabalho_Final_SOE_2026.1_Esteira ↗
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact">
+    <p class="comment">// CONTACT</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <span class="eyebrow">EMAIL</span>
+        <a href="mailto:calebpaulim18@gmail.com">calebpaulim18@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="eyebrow">PHONE</span>
+        <a href="tel:+5561983858067">+55 (61) 98385‑8067</a>
+      </div>
+    </div>
+    <p class="fine-print">Paulo Caleb — Electronics Engineering, UnB</p>
+  </footer>
+
+</main>
+
+<script>
+// Mark unpopulated footprints (missing images) with the expected filename,
+// so the layout stays useful as a checklist until real photos are uploaded.
+document.querySelectorAll('.footprint img').forEach(function (img) {
+  img.addEventListener('error', function () {
+    var fig = img.closest('.footprint');
+    fig.classList.add('missing');
+    fig.setAttribute('data-label', 'NOT POPULATED');
+  }, { once: true });
+});
+</script>
+
+</body>
+</html>
